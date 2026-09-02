@@ -35,6 +35,21 @@ const Setting: Collection = {
     },
     {
       type: "string",
+      name: "description",
+      label: "Site Description",
+      description: "Fallback description used for Open Graph and Twitter cards.",
+      ui: {
+        component: "textarea"
+      }
+    },
+    {
+      type: "string",
+      name: "locale",
+      label: "Locale",
+      description: "Open Graph locale, e.g. en_US. Defaults to en_US when empty."
+    },
+    {
+      type: "string",
       name: "defaultMode",
       label: "Default Color Mode",
       description: "Set to \"light\" or \"dark\". Leave empty for auto (follows system preference).",
